@@ -1,0 +1,66 @@
+.main-content-container{
+    margin-left: 20vh;
+    margin-right: 20vh;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Permanent Marker';
+    padding: 2vh;
+    padding-bottom: 3.5vh;
+    border-radius: 5vh;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column{
+    display: flex;
+    width: 75%;
+}
+
+/* schedule */
+.schedule-container{
+    margin: 2vh;
+    width: 100%;
+}
+
+.schedule-table{
+    width: 100%;
+    background-image: url('../../assets/papertexture.png');
+    color: black;
+}
+
+.schedule-table-row{
+    border-bottom: 3px solid black;
+}
+
+.schedule-table-header{
+    padding: 2vh;
+}
+
+.schedule-table-data{
+    padding: 2vh;
+}
+
+/* spotify */
+.spotify-container{
+    margin-left: 2vh;
+    width: 100%
+}
+
+/* carousel */
+.carousel-container{
+    width: 75%;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.carousel-img{
+    width: 100%;
+}
+
+.carousel-item{
+    width: 50px
+}

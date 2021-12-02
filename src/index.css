@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
@@ -17,4 +18,5 @@ html{
   background-image: url(./assets/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }

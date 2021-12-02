@@ -1,5 +1,5 @@
 import React from "react";
-import title from "../../assets/DestroyTheMoonTitleWhite.png";
+import title from "../../assets/DestroyTheMoonWhite(1).png";
 import "./style.css";
 
 const navbar = () => {

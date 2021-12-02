@@ -1,12 +1,13 @@
 .nav {
   display: flex;
+  margin-left: 20vh;
+  margin-right: 20vh;
 }
 
 .imgTitle {
-  height: 15;
-  width: 15vh;
-  padding-left: 5vh;
+  width: 25vh;
   padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .nav-list {
@@ -15,6 +16,7 @@
   width: 75%;
   margin-left: 50vh;
   justify-content: space-around;
+  align-items: center;
 }
 
 .nav-item {
