@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+}
+
+.imgTitle {
+  height: 15;
+  width: 15vh;
+  padding-left: 5vh;
+  padding-top: 2vh;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline-flex;
+  width: 75%;
+  margin-left: 50vh;
+  justify-content: space-around;
+}
+
+.nav-item {
+  background-color: orange;
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.nav-link {
+  padding-top: 3.5vh;
+  font-family: "Permanent Marker";
+  color: black;
+  font-style: oblique;
+  text-decoration: none;
+}
