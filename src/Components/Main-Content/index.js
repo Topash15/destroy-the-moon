@@ -84,19 +84,36 @@ const content = () => {
               <div className="carousel-item">
                 <a href="#">
                   <img
-                    className="carousel-img"
+                    className="carousel-img HITOR"
                     src={require("../../assets/HITOR.png").default}
                   />
                 </a>
               </div>
-              <div>
-                <h3>2</h3>
+              <div className="carousel-item">
+                <iframe
+                  className="carousel-iframe"
+                  src="https://www.youtube.com/embed/9uIL_9_m2_I"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
-              <div>
-                <h3>3</h3>
+              <div className="carousel-item">
+              <a href="#">
+                  <img
+                    className="carousel-img MOWS"
+                    src={require("../../assets/MOWS-cropped.png").default}
+                  />
+                </a>
               </div>
-              <div>
-                <h3>4</h3>
+              <div className="carousel-item merch-container">
+              <a href="#">
+                  <img
+                    className="carousel-img merch"
+                    src={require("../../assets/Merch-Store.png").default}
+                  />
+                </a>
               </div>
               <div>
                 <h3>5</h3>

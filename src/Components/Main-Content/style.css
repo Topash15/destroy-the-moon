@@ -13,6 +13,7 @@
 .left-column{
     display: flex;
     flex-direction: column;
+    margin-left: 4vh;
 }
 
 .right-column{
@@ -57,10 +58,37 @@
     margin-right: 20vh;
 }
 
+.carousel-item{
+    width: 50vh;
+    height: 50vh;
+}
+
 .carousel-img{
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    display: block;
+    object-fit: contain;
+}
+
+.HITOR{
+    object-position: -12vh;
+}
+
+.MOWS{
+    width: 100%;
+    object-position: 0vh -3vh;
+}
+
+.merch-container{
+    background-color: #4A0500;
+}
+
+.merch{
     width: 100%;
 }
 
-.carousel-item{
-    width: 50px
+.carousel-iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
