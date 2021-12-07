@@ -6,10 +6,10 @@ import "./style.css";
 import Slider from "../Slider";
 
 // photos
-import HITORimage from "../../assets/HITOR.png";
+import HITORimage from "../../assets/HITOR-Carousel.png";
 import Cherry from "../../assets/CherryMV.png";
 import Merch from "../../assets/Merch-Store.png";
-import MakingOf from "../../assets/MOWS.png"
+import MakingOf from "../../assets/MOWS.png";
 
 const content = () => {
   // optional if want custom arrows
@@ -35,16 +35,58 @@ const content = () => {
   }
 
   const carousel = [
-    { title: "HITOR", image: HITORimage, link: "" },
-    { title: "Cherry", image: Cherry, link: "" },
-    { title: "Merch", image: Merch, link: "" },
-    { title: "MakingOf", image: MakingOf, link: "" },
-    
+    { title: "HITOR", image: HITORimage, link: "https://li.sten.to/HITOR" },
+    {
+      title: "Cherry",
+      image: Cherry,
+      link: "https://www.youtube.com/watch?v=9uIL_9_m2_I",
+    },
+    {
+      title: "Merch",
+      image: Merch,
+      link: "https://teespring.com/stores/destroy-the-moons-store",
+    },
+    {
+      title: "MakingOf",
+      image: MakingOf,
+      link: "https://www.youtube.com/watch?v=fyyq-Z9Yg8k&feature=youtu.be",
+    },
   ];
 
   return (
     <section className="main-content-container">
-      <div className="left-column">
+      <div className="carousel-div">
+        <Slider
+          options={{
+            autoPlay: 4000,
+            pauseAutoPlayOnHover: true,
+            wrapAround: true,
+            adaptiveHeight: false,
+            setGallerySize: false,
+            fade: true,
+          }}
+        >
+          {carousel.map((slide, index) => (
+            <div className="carousel-item" key={index}>
+              <a className="carousel-link" href={slide.link}>
+                <img
+                  className="carousel-img"
+                  src={slide.image}
+                  alt={slide.title}
+                ></img>
+              </a>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
+  );
+};
+
+export default content;
+
+
+      {/* <div className="left-column">
         <div className="schedule-container">
           <h2 className="schedule-title">Come see us live!</h2>
           <table className="schedule-table">
@@ -56,7 +98,7 @@ const content = () => {
             </thead>
             <tbody className="schedule-table-body">
               {/* will generate table rows/data dynamically */}
-              <tr className="schedule-table-row">
+              {/* <tr className="schedule-table-row">
                 <td className="schedule-table-data">12/22</td>
                 <td className="schedule-table-data">The Bar</td>
               </tr>
@@ -82,34 +124,4 @@ const content = () => {
           ></iframe>
         </div>
       </div>
-      <div className="right-column">
-        <div className="carousel">
-          <Slider
-            options={{
-              autoPlay: 4000,
-              pauseAutoPlayOnHover: true,
-              wrapAround: true,
-              adaptiveHeight: false,
-              setGallerySize: false,
-              fade: true,
-            }}
-          >
-            {carousel.map((slide, index) => (
-              <div className="carousel-item" key={index}>
-                <a className="carousel-link" href={slide.link}>
-                  <img
-                    className="carousel-img"
-                    src={slide.image}
-                    alt={slide.title}
-                  ></img>
-                </a>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default content;
+      <div className="right-column"></div> */}
