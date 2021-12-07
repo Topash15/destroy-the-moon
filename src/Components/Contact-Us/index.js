@@ -36,7 +36,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="contact-container">
+    <section className="contact-container" id="contact-us">
       <div className="contact-title-div">
         <h2 className="contact-title">Contact Us</h2>
         <p className="contact-description">

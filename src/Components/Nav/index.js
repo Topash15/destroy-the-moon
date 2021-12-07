@@ -7,11 +7,12 @@ const navbar = () => {
     { title: "About us", link: "#about-us" },
     { title: "Albums", link: "/#/albums" },
     { title: "Gallery", link: "/#/gallery" },
-    { title: "Contact Us", link: "/#/contact" },
+    { title: "Contact Us", link: "#contact-us" },
+    { title: "Merch", link: "/#/merch"}
   ];
 
   return (
-    <nav className="nav">
+    <nav className="nav sticky">
       <a href="/">
         <img
           className="imgTitle"

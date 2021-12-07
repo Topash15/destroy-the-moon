@@ -6,7 +6,7 @@ const splashscreen = () => {
 
   const redirect = () => {
     setTimeout(() => {
-      window.location.assign('/#/home');
+      window.location.assign('/home');
     }, 5000)
   }
 

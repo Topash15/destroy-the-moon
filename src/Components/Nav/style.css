@@ -1,9 +1,16 @@
 .nav {
   display: flex;
-  margin-left: 20vh;
-  margin-right: 20vh;
   justify-content: space-around;
   align-items: center;
+  height: 8vh;
+  background-image: url(../../assets/StarBackground.png);
+  z-index: 1;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .imgTitle {

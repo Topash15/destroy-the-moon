@@ -1,8 +1,18 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "./style.css";
 
+// components
+import Slider from "../Slider";
+
+// photos
+import HITORimage from "../../assets/HITOR.png";
+import Cherry from "../../assets/CherryMV.png";
+import Merch from "../../assets/Merch-Store.png";
+import MakingOf from "../../assets/MOWS.png"
+
 const content = () => {
+  // optional if want custom arrows
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -13,7 +23,6 @@ const content = () => {
       />
     );
   }
-
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -25,16 +34,13 @@ const content = () => {
     );
   }
 
-  // slick settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />
-  };
+  const carousel = [
+    { title: "HITOR", image: HITORimage, link: "" },
+    { title: "Cherry", image: Cherry, link: "" },
+    { title: "Merch", image: Merch, link: "" },
+    { title: "MakingOf", image: MakingOf, link: "" },
+    
+  ];
 
   return (
     <section className="main-content-container">
@@ -77,52 +83,29 @@ const content = () => {
         </div>
       </div>
       <div className="right-column">
-        <div className="carousel-container">
-          <div className="carousel">
-            <Slider {...settings}>
-              {/* will generate carousel slides dynamically */}
-              <div className="carousel-item">
-                <a href="#">
+        <div className="carousel">
+          <Slider
+            options={{
+              autoPlay: 4000,
+              pauseAutoPlayOnHover: true,
+              wrapAround: true,
+              adaptiveHeight: false,
+              setGallerySize: false,
+              fade: true,
+            }}
+          >
+            {carousel.map((slide, index) => (
+              <div className="carousel-item" key={index}>
+                <a className="carousel-link" href={slide.link}>
                   <img
-                    className="carousel-img HITOR"
-                    src={require("../../assets/HITOR.png").default}
-                  />
+                    className="carousel-img"
+                    src={slide.image}
+                    alt={slide.title}
+                  ></img>
                 </a>
               </div>
-              <div className="carousel-item">
-                <iframe
-                  className="carousel-iframe"
-                  src="https://www.youtube.com/embed/9uIL_9_m2_I"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div className="carousel-item">
-              <a href="#">
-                  <img
-                    className="carousel-img MOWS"
-                    src={require("../../assets/MOWS-cropped.png").default}
-                  />
-                </a>
-              </div>
-              <div className="carousel-item merch-container">
-              <a href="#">
-                  <img
-                    className="carousel-img merch"
-                    src={require("../../assets/Merch-Store.png").default}
-                  />
-                </a>
-              </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
-              </div>
-            </Slider>
-          </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </section>

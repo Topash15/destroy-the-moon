@@ -1,0 +1,17 @@
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../assets/HopeITurnOutRight.png");
+    height: 92vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 3vh;
+}
+
+.hero-title{
+    width: 50%;
+}
