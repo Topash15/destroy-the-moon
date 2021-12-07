@@ -3,25 +3,30 @@ import title from "../../assets/DestroyTheMoonWhite(1).png";
 import "./style.css";
 
 const navbar = () => {
+  const categories = [
+    { title: "About us", link: "#about-us" },
+    { title: "Albums", link: "/#/albums" },
+    { title: "Gallery", link: "/#/gallery" },
+    { title: "Contact Us", link: "/#/contact" },
+  ];
+
   return (
     <nav className="nav">
-      <img className="imgTitle" src={title} alt="Destroy the Moon"></img>
+      <a href="/">
+        <img
+          className="imgTitle"
+          src={title}
+          alt="Destroy the Moon"
+        ></img>
+      </a>
       <ul className="nav-list">
-        <li className="nav-item">
-          <a className="nav-link" href="">
-            Albums
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="">
-            About Us
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="">
-            Contact
-          </a>
-        </li>
+        {categories.map((category) => (
+          <li className="nav-item">
+            <a className="nav-link" href={category.link}>
+              {category.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
