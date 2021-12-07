@@ -1,0 +1,115 @@
+.MoonContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title{
+    position: absolute;
+    font-size: 10vh;
+  }
+
+  #moon {
+    height: 90vh;
+  }
+
+  #moon path:nth-child(1) {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 50px;
+    fill: black;
+  }
+  
+  #moon path:nth-child(2) {
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  
+  #moon path:nth-child(3) {
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  
+  /* 4-6 are definition lines */
+  #moon path:nth-child(4) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(5) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(6) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(7) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(8) {
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  
+  /* line */
+  #moon path:nth-child(9) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(10) {
+    stroke-dasharray: 5px;
+    ;
+  }
+  
+  #moon path:nth-child(11) {
+    stroke-dasharray: 56px;
+    fill: gray;
+  }
+  
+  #moon path:nth-child(12) {
+    stroke-dasharray: 5px;
+    ;
+  }
+  
+  #moon path:nth-child(13) {
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  
+  #moon path:nth-child(14) {
+    stroke-dasharray: 5px;
+  }
+  
+  #moon path:nth-child(15) {
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  #moon path:nth-child(16) {
+    stroke-dasharray: 5px;
+    ;
+  }
+  #moon path:nth-child(17){
+    stroke-dasharray: 5px;
+    ;
+  }
+  #moon path:nth-child(18){
+    stroke-dasharray: 5px;
+    ;
+  }
+  #moon path:nth-child(19){
+    stroke-dasharray: 5px;
+    ;
+  }
+  #moon path:nth-child(20){
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
+  #moon path:nth-child(21){
+    stroke-dasharray: 5px;
+    ;
+  }
+  #moon path:nth-child(22){
+    stroke-dasharray: 5px;
+    fill: gray;
+  }
