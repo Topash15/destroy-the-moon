@@ -42,7 +42,9 @@ export const ContactUs = () => {
         <p className="contact-description">
           Interested in learning more?
           <br />
-          Want us to perform for you?
+          Booking questions?
+          <br />
+          -->
         </p>
       </div>
       <div className="contact-form-div">

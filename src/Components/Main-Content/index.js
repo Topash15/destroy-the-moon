@@ -12,27 +12,6 @@ import Merch from "../../assets/Merch-Store.png";
 import MakingOf from "../../assets/MOWS.png";
 
 const content = () => {
-  // optional if want custom arrows
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  }
 
   const carousel = [
     { title: "HITOR", image: HITORimage, link: "https://li.sten.to/HITOR" },
@@ -84,44 +63,3 @@ const content = () => {
 };
 
 export default content;
-
-
-      {/* <div className="left-column">
-        <div className="schedule-container">
-          <h2 className="schedule-title">Come see us live!</h2>
-          <table className="schedule-table">
-            <thead className="schedule-table-head">
-              <tr>
-                <th className="schedule-table-header">Date</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody className="schedule-table-body">
-              {/* will generate table rows/data dynamically */}
-              {/* <tr className="schedule-table-row">
-                <td className="schedule-table-data">12/22</td>
-                <td className="schedule-table-data">The Bar</td>
-              </tr>
-              <tr className="schedule-table-row">
-                <td className="schedule-table-data">12/22</td>
-                <td className="schedule-table-data">The Bar</td>
-              </tr>
-              <tr className="schedule-table-row">
-                <td className="schedule-table-data">12/22</td>
-                <td className="schedule-table-data">The Bar</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div className="spotify-container">
-          <iframe
-            src="https://open.spotify.com/embed/album/2tPPTLfRq5JaV58oYapIWj?utm_source=generator"
-            width="100%"
-            height="200"
-            frameBorder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-      </div>
-      <div className="right-column"></div> */}

@@ -8,10 +8,12 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     padding: 3vh;
 }
 
 .hero-title{
     width: 50%;
+    margin-top: 15vh;
 }

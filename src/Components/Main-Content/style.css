@@ -1,15 +1,7 @@
 .main-content-container {
-  margin-left: 20vh;
-  margin-right: 20vh;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   display: flex;
-  /* flex-wrap: wrap; */
   font-family: "Permanent Marker";
-  padding: 2vh;
-  margin-top: 8vh;
-  padding-bottom: 3.5vh;
-  border-radius: 5vh;
-  min-height: 100vh;
   justify-content:center;
   align-items:center;
 }
@@ -64,20 +56,17 @@
 
 .carousel-div{
   width: 100%;
-  height: 100%;
+  height: 65vh;
 }
 
 .carousel{
-  height: 100vh;
-}
-
-.flickity-viewport{
-  height: 50vh;
+  height: 100%;
+  /* margin-top: 1vh; */
 }
 
 .carousel-item {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: baseline;
 }
@@ -90,34 +79,4 @@
 .carousel-img {
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: contain;
-}
-
-.HITOR {
-  object-position: -12vh;
-}
-
-.CHERRY {
-  background-color: black;
-  width: 100%;
-}
-
-.MakingOf {
-  width: 100%;
-  object-position: 0vh -3vh;
-}
-
-.merch-container {
-  background-color: #4a0500;
-}
-
-.merch {
-  width: 100%;
-}
-
-.carousel-iframe {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
