@@ -7,7 +7,7 @@ const splashscreen = () => {
   const redirect = () => {
     setTimeout(() => {
       window.location.assign('/home');
-    }, 5000)
+    }, 3000)
   }
 
   redirect();
@@ -129,7 +129,7 @@ const splashscreen = () => {
         </svg>
       </div>
       <img
-        className="animate__animated animate__backInDown title"
+        className="animate__animated animate__backInDown animate_faster title"
         src={require("../../assets/DestroyTheMoonWhiteCenter.png").default}
         alt="Destroy the Moon"
       ></img>

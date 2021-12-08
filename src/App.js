@@ -7,7 +7,7 @@ import SplashScreen from "./Pages/Splashscreen/index";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="top">
       <Routes>
           {/* <Route path="/splashscreen" element={<SplashScreen/>}/> */}
           <Route exact path="/" element={<SplashScreen />}/>

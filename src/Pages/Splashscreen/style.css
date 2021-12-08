@@ -1,8 +1,9 @@
 .MoonContainer {
-    height: 100vh;
+    height: 101vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    --animate-duration: 0.8s
   }
   
   .title{

@@ -1,0 +1,61 @@
+.shows-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    font-family: "Permanent Marker";
+    background-color: rgba(0, 0, 0, 0.883);
+    padding-bottom: 5vh;
+}
+
+.shows-title-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.shows-title{
+    font-size: 9vh;
+}
+
+.shows-description{
+    font-size: 3vh;
+}
+
+.shows-schedule-div{
+    font-size: 5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shows-schedule-table{
+    border: 1px solid white;
+}
+
+.schedule-row{
+    padding: 1vh;
+    margin: 2vh;
+    width: 50vh;
+    border-bottom: 1px solid white;
+}
+
+.schedule-date{
+    padding: 1vh;
+    width: 25vh;
+}
+
+.schedule-location{
+    padding: 1vh;
+    width: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.schedule-location-link{
+    color:rgba(21, 15, 104, 0.883);
+    text-decoration: none;
+}
+
+.schedule-location-icon{
+    height: 5vh;
+}

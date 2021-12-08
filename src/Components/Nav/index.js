@@ -4,7 +4,7 @@ import "./style.css";
 
 const navbar = () => {
   const categories = [
-    { title: "About us", link: "#about-us" },
+    { title: "About Us", link: "#about-us" },
     { title: "Albums", link: "/#/albums" },
     { title: "Gallery", link: "/#/gallery" },
     { title: "Contact Us", link: "#contact-us" },
@@ -13,7 +13,7 @@ const navbar = () => {
 
   return (
     <nav className="nav sticky">
-      <a href="/">
+      <a href="/home">
         <img
           className="imgTitle"
           src={title}
