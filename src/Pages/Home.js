@@ -10,14 +10,14 @@ import Footer from "../Components/Footer"
 
 const home = () => {
   return (
-    <div>
+    <main>
       <Nav />
       <Hero/>
       <Carousel />
       <Shows />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 };
 

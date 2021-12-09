@@ -4,11 +4,11 @@ import "./style.css";
 
 const navbar = () => {
   const categories = [
-    { title: "About Us", link: "/#/about-us" },
-    { title: "Albums", link: "/#/albums" },
-    { title: "Gallery", link: "/#/gallery" },
+    { title: "About Us", link: "/about-us" },
+    { title: "Albums", link: "/albums" },
+    { title: "Gallery", link: "/gallery" },
     { title: "Contact Us", link: "#contact-us" },
-    { title: "Merch", link: "/#/merch"}
+    { title: "Merch", link: "/merch"}
   ];
 
   return (
