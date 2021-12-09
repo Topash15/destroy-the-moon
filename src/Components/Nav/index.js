@@ -4,7 +4,7 @@ import "./style.css";
 
 const navbar = () => {
   const categories = [
-    { title: "About Us", link: "#about-us" },
+    { title: "About Us", link: "/#/about-us" },
     { title: "Albums", link: "/#/albums" },
     { title: "Gallery", link: "/#/gallery" },
     { title: "Contact Us", link: "#contact-us" },
