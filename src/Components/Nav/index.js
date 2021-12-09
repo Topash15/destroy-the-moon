@@ -7,7 +7,7 @@ const navbar = () => {
     { title: "About Us", link: "/about-us" },
     { title: "Albums", link: "/albums" },
     { title: "Gallery", link: "/gallery" },
-    { title: "Contact Us", link: "#contact-us" },
+    { title: "Contact Us", link: "/home#contact-us" },
     { title: "Merch", link: "/merch"}
   ];
 
