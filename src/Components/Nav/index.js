@@ -8,7 +8,7 @@ const navbar = () => {
     { title: "Albums", link: "/albums" },
     { title: "Gallery", link: "/gallery" },
     { title: "Contact Us", link: "/home#contact-us" },
-    { title: "Merch", link: "/merch"}
+    { title: "Merch", link: "https://destroy-the-moons-store.creator-spring.com/?"}
   ];
 
   return (
