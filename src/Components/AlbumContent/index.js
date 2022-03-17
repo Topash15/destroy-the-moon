@@ -4,6 +4,7 @@ import "./style.css";
 // photos
 import HITOR from "../../assets/AlbumCovers/HITOR.png";
 import Wayside from "../../assets/AlbumCovers/Wayside.png";
+import DTM from "../../assets/AlbumCovers/DestroyTheMoon.png";
 
 const albums = () => {
   const albumList = [
@@ -50,6 +51,29 @@ const albums = () => {
         "Analytical Nightmare",
         "End of Times",
         "Summerfield",
+      ],
+    },
+    {
+      title: "Destroy the Moon",
+      description: "Our first albmum",
+      image: DTM,
+      songList: [
+        "Modern Reality",
+        "Queen At The Prom",
+        "Thrills",
+        "Another Universe",
+        "Subject of Massacre",
+        "Missions to Mars",
+        "Halo",
+        "Lonely Girl",
+        "Little Miss Do Right",
+        "Promises",
+        "Jet Black Heart",
+        "Broken Wings",
+        "Red",
+        "Madeline",
+        "Collision",
+        "Mindless One",
       ],
     },
   ];

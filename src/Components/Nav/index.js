@@ -6,7 +6,7 @@ const navbar = () => {
   const categories = [
     { title: "About Us", link: "/about-us" },
     { title: "Albums", link: "/albums" },
-    { title: "Gallery", link: "/gallery" },
+    // { title: "Gallery", link: "/gallery" },
     { title: "Contact Us", link: "/home#contact-us" },
     { title: "Merch", link: "https://destroy-the-moons-store.creator-spring.com/?"}
   ];

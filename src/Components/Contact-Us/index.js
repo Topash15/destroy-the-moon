@@ -44,7 +44,6 @@ export const ContactUs = () => {
           <br />
           Booking questions?
           <br />
-          -->
         </p>
       </div>
       <div className="contact-form-div">
@@ -55,7 +54,12 @@ export const ContactUs = () => {
           <input className="contact-input" type="email" name="email" />
           <label className="contact-label">Message</label>
           <textarea className="contact-text" name="message" />
-          <input className="contact-submit" type="submit" value="Send" />
+          <input
+            className="contact-submit"
+            type="submit"
+            value="Send"
+            disabled
+          />
         </form>
       </div>
     </section>
