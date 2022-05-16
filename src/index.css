@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,6 +18,6 @@ html{
   scroll-behavior: smooth;
   background-image: url(./assets/StarBackground.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   background-attachment: fixed;
 }
