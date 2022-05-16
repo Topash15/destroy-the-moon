@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: auto;
   background-image: url(../../assets/StarBackground.png);
   z-index: 1;
 }
@@ -14,9 +14,9 @@
 }
 
 .imgTitle {
-  width: 12vh;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  width: 10em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav-list {
@@ -28,22 +28,59 @@
 }
 
 .nav-item {
-  height: 10vh;
-  width: 10vh;
   display: flex;
   justify-content: center;
   justify-items: center;
 }
 
 .nav-link {
-  padding-top: 3.5vh;
   font-family: "Permanent Marker";
   color: white;
   font-style: oblique;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 1.5em;
 }
 
 .nav-link:hover{
-  font-size: 2.1vh;
+  font-size: 1.6em;
+  color: rgb(177, 75, 75);
+}
+
+
+@media  (max-width: 768px) {
+  .nav{
+    flex-direction: column;
+  }
+
+  .sticky{
+    position: relative;
+  }
+}
+
+@media  (max-width: 425px) {
+  .imgTitle{
+    padding: 0;
+  }
+
+  .nav{
+    padding-top: 1.5em;
+    flex-direction: column;
+  }
+
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-item{
+    margin: auto;
+  }
+
+  .sticky{
+    position: relative;
+  }
 }
