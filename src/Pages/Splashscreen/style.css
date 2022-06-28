@@ -1,5 +1,6 @@
 .MoonContainer {
-    height: 101vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,11 +9,12 @@
   
   .title{
     position: absolute;
-    font-size: 10vh;
+    width: 75%;
+    margin: 1rem;
   }
 
   #moon {
-    height: 90vh;
+    width: 90vw;
   }
 
   #moon path:nth-child(1) {
