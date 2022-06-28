@@ -1,6 +1,5 @@
 .foot-container {
     display: flex;
-
 }
 
 .footer-list{
@@ -10,12 +9,12 @@
 }
 
 .footer-list-item{
-    height: 25%;
+    height: 3rem;
     background-color: white;
     border: 1px solid rgba(0,0,0,0.5);
     border-radius: 50%;
     padding: 10px;
-    margin-left: 5vh;
+    margin: auto 0;
 }
 
 .footer-list-item:hover{
@@ -24,4 +23,28 @@
 
 .footer-icon{
     height: 50px;
+}
+
+@media (max-width: 426px){
+    .footer-container{
+        /* flex-direction: column; */
+        width: 100%
+    }
+
+    .footer-list{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        padding-inline-start: 0;
+    }
+
+    .footer-list-item{
+        height:1rem;
+        width:1rem;
+    }
+
+    .footer-icon{
+        height: 1em;
+    }
 }

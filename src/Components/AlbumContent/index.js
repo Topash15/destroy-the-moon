@@ -55,7 +55,7 @@ const albums = () => {
     },
     {
       title: "Destroy the Moon",
-      description: "Our first albmum",
+      description: "The album that started it all!",
       image: DTM,
       songList: [
         "Modern Reality",
